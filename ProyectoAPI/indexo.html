@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuWeather</title>
+    <link rel="icon" href="./weather-forecast.png" type="image">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <img src="./iconos/weather-forecast.png" width="100" height="90" class="headerIcon">
+        <h1 class="header">TuWeather</h1>
+    </header>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Introduce tu ciudad" spellcheck="false">
+            <button><img src="./iconos/search.png" width="40" height="40"></button>
+        </div>
+        <div class="error">
+            <p>Introduce un nombre de ciudad válido</p>
+        </div>
+        <div class="weather">
+            <img src="./iconos/raining.png" width="140" height="140" alt="lluvia" class="weather-icon">
+            <h1 class="temp">22<sup>ºC</sup></h1>
+            <h2 class="city">Bilbao</h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="./iconos/humidity.png" width="60" height="50" alt="humedad">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humedad</p>
+                    </div>
+
+                    <div class="col">
+                        <img src="./iconos/vientos.png" width="48" height="52" alt="viento">
+                        <div>
+                            <p class="wind">15km/h</p>
+                            <p>Viento</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="./iconos/thermometer.png" width="48" height="52" alt="sensaciontermica">
+                        <div>
+                            <p class="feelslike">15<sup>C</sup></p>
+                            <p>Sensación térmica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h2>Previsión dentro de cinco días:</h2>
+        
+        <ul class="forecast-card">
+                <div class="weatherContainer">
+                    <img src="./iconos/cloud.png" width="36" alt="36" alt="" class="forecast-icon" id="icon1">
+                    <p class="day" id="day1">asd</p>
+                    <p class="tempmin" id="day1Min">Generando...</p>
+                    <p class="tempmax" id="day1Max">Generando...</p>
+                </div>
+
+                <div class="weatherContainer">
+                    <img src="./iconos/cloud.png" width="36" alt="36" alt="" class="forecast-icon" id="icon2">
+                    <p class="day" id="day2"></p>
+                    <p class="tempmin" id="day2Min">Generando...</p>
+                    <p class="tempmax" id="day2Max">Generando...</p>
+                </div>
+
+                <div class="weatherContainer">
+                    <img src="./iconos/cloud.png" width="36" alt="36" alt="" class="forecast-icon" id="icon3">
+                    <p class="day" id="day3"></p>
+                    <p class="tempmin" id="day3Min">Generando...</p>
+                    <p class="tempmax" id="day3Max">Generando...</p>
+                </div>
+
+                <div class="weatherContainer">
+                    <img src="./iconos/cloud.png" width="36" alt="36" alt="" class="forecast-icon" id="icon4">
+                    <p class="day" id="day4"></p>
+                    <p class="tempmin" id="day4Min">Generando...</p>
+                    <p class="tempmax" id="day4Max">Generando...</p>
+                </div>
+
+                <div class="weatherContainer">
+                    <img src="./iconos/cloud.png" width="36" alt="36" alt="" class="forecast-icon" id="icon5">
+                    <p class="day" id="day5"></p>
+                    <p class="tempmin" id="day5Min">Generando...</p>
+                    <p class="tempmax" id="day5Max">Generando...</p>
+                </div>
+        </ul>
+            
+          
+        </div>
+    </div>
+        
+    <script src="./openweather.js"></script>
+
+    <footer>
+        <p class="footer">¿No sabes qué hacer? Try this: </p>
+    </footer>
+</div>
+</body>
+
+
+</html>
